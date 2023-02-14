@@ -21,6 +21,8 @@ class FifteenthTitle {
 
   static #getTitleFromJson(resData: ResData[]) {
     const itemWithTitle = resData.find(item => item.id === FifteenthTitle.#ID)
+    // здесь потенциальная ошибка. Я не стал ничего исправлять и сделал как в задание. 
+    // Если решить эту ошибку, то вот так itemWithTitle!.title 
     const title = itemWithTitle.title
     console.log(itemWithTitle)
 
